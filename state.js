@@ -55,6 +55,6 @@ export function updateFriend(friend) {
 }
 
 export function removeFriend(friend) {
-    // *** remove the supplied friend from state.friends,
-    // use removeMushroom as a guide
+    const index = state.friends.indexOf(friend);
+    state.friends.splice(index, 1);
 }
