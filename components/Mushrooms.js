@@ -9,8 +9,6 @@ export default function createMushrooms(root) {
             const image = Mushroom({ mushroom });
             container.append(image);
         }
-        //     - call the Mushroom component with the mushroom object
-        //     - append the returned element to the container  
 
     };
 }

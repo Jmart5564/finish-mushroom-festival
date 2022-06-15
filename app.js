@@ -47,7 +47,7 @@ const Forest = createForest(document.querySelector('#forest'), {
 const Friends = createFriends(document.querySelector('#friends'), {
     handleFeedFriend: (friend) => {
         // *** Three possible outcomes:
-        if (mushrooms === 0) {
+        if (!state.mushrooms.length) {
             setMessage('Get back in the forest and get your friends mushrooms!');
         }
         else if (friend.satisfied === 2) {
